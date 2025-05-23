@@ -7,8 +7,8 @@
     <style>
         body {
             background-color: black;
-            color: #c0b334; /* Couleur du texte par défaut */
-            font-family: Arial, sans-serif;
+            color: #c0b334;
+            font-family: Arial, serif;
             margin: 20px;
             padding: 20px;
         }
@@ -25,7 +25,7 @@
             border-radius: 5px;
         }
         a {
-            color: #c0b334; /* Couleur des liens */
+            color: #c0b334;
             text-decoration: none;
         }
         a:hover {
@@ -76,12 +76,12 @@
             const body = document.body;
             const currentBgColor = window.getComputedStyle(body).backgroundColor;
 
-            if (currentBgColor === 'rgb(0, 0, 0)') { // Si le fond est noir
+            if (currentBgColor === 'rgb(0, 0, 0)') {
                 body.style.backgroundColor = 'white';
-                body.style.color = 'black'; // Texte en noir
+                body.style.color = 'black';
             } else {
                 body.style.backgroundColor = 'black';
-                body.style.color = '#c0b334'; // Texte en jaune
+                body.style.color = '#c0b334';
             }
         }
     </script>
